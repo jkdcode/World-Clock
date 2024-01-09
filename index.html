@@ -18,33 +18,48 @@
   </head>
   <body>
     <div class="container">
-      <h1>🌍World Clock🌏</h1>
-      <select name="cities" id="cities">
-        <option value="" selected>Pick a place ...</option>
-        <option value="la-serena">La Serena, Chile</option>
-        <option value="lisle">Lisle, Illinois, USA</option>
-        <option value="oslo">Oslo, Norway</option>
-        <option value="abuja">Abuja, Nigeria</option>
-        <option value="ulaanbaatar">Ulaanbaatar, Mongolia</option>
-        <option value="current-location">Current location</option>
-      </select>
-
-      <div class="city">
-        <h2>New York, USA</h2>
-        <div class="date">January 9 2023</div>
-        <div class="time">1:45:45 AM</div>
-      </div>
-      <div class="city">
-        <h2>New Dehli, India</h2>
-        <div class="date">January 9 2023</div>
-        <div class="time">1:45:45 AM</div>
-      </div>
+      <header>
+        <h1>🌍World Clock🌏</h1>
+        <label for="cities">Where do you wanna go?</label>
+        <select name="cities" id="cities">
+          <option value="" selected>Pick a place ...</option>
+          <option value="la-serena">La Serena, Chile</option>
+          <option value="lisle">Lisle, Illinois, USA</option>
+          <option value="oslo">Oslo, Norway</option>
+          <option value="abuja">Abuja, Nigeria</option>
+          <option value="ulaanbaatar">Ulaanbaatar, Mongolia</option>
+          <option value="current-location">Current location</option>
+        </select>
+      </header>
+      <main>
+        <div class="city">
+          <div>
+            <h2>New York, USA</h2>
+            <div class="date">January 9, 2023</div>
+          </div>
+          <div class="time">1:45:45 <span class="am-pm">AM</span></div>
+        </div>
+        <div class="city">
+          <div>
+            <h2>Karachi, Pakistan</h2>
+            <div class="date">January 9, 2023</div>
+          </div>
+          <div class="time">1:45:45 <span class="am-pm">AM</span></div>
+        </div>
+      </main>
     </div>
+
     <footer>
-      This project was coded by Julie Didriksen. It is open sourced on
-      <a href="https://github.com/jkdcode/World-Clock">GitHub</a>
+      This project was coded by
+      <a href="https://github.com/jkdcode" target="_blank">Julie Didriksen</a>.
+      It is open sourced on
+      <a href="https://github.com/jkdcode/World-Clock" target="_blank"
+        >GitHub</a
+      >
       and hosted on
-      <a href="https://julies-world-clock.netlify.app/">Netlify</a>.
+      <a href="https://julies-world-clock.netlify.app/" target="_blank"
+        >Netlify</a
+      >.
     </footer>
     <script src="src/index.js"></script>
   </body>
