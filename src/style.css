@@ -38,6 +38,11 @@ select {
   font-family: "Inria Sans", sans-serif;
 }
 
+small {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
 footer {
   text-align: center;
   padding: 20px 0 15px;
@@ -66,8 +71,8 @@ a:hover {
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
-  padding: 20px 0;
+  margin: 10px 0;
+  padding: 10px 0;
   border-bottom: 1px dashed #143d52;
 }
 
@@ -78,9 +83,4 @@ a:hover {
 .time {
   font-size: 48px;
   font-weight: bold;
-}
-
-.am-pm {
-  font-size: 18px;
-  vertical-align: middle;
 }
