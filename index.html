@@ -3,11 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div class="container">
+      <h1>🌍World Clock🌏</h1>
+      <select name="cities" id="cities">
+        <option value="" selected>Pick a place ...</option>
+        <option value="la-serena">La Serena, Chile</option>
+        <option value="lisle">Lisle, Illinois, USA</option>
+        <option value="oslo">Oslo, Norway</option>
+        <option value="abuja">Abuja, Nigeria</option>
+        <option value="ulaanbaatar">Ulaanbaatar, Mongolia</option>
+        <option value="current-location">Current location</option>
+      </select>
+
+      <div class="city">
+        <h2>New York, USA</h2>
+        <div class="date">January 9 2023</div>
+        <div class="time">1:45:45 AM</div>
+      </div>
+      <div class="city">
+        <h2>New Dehli, India</h2>
+        <div class="date">January 9 2023</div>
+        <div class="time">1:45:45 AM</div>
+      </div>
+    </div>
     <footer>
       This project was coded by Julie Didriksen. It is open sourced on
       <a href="https://github.com/jkdcode/World-Clock">GitHub</a>
