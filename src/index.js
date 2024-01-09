@@ -7,10 +7,10 @@ function updateTime() {
   let newYorkDateElement = newYorkElement.querySelector(".date");
   let newYorkTimeElement = newYorkElement.querySelector(".time");
   let newYorkTime = moment().tz("America/New_York");
-  let copenhagenElement = document.querySelector("#copenhagen");
-  let copenhagenDateElement = copenhagenElement.querySelector(".date");
-  let copenhagenTimeElement = copenhagenElement.querySelector(".time");
-  let copenhagenTime = moment().tz("Europe/Copenhagen");
+  let edinburghElement = document.querySelector("#edinburgh");
+  let edinburghDateElement = edinburghElement.querySelector(".date");
+  let edinburghTimeElement = edinburghElement.querySelector(".time");
+  let edinburghTime = moment().tz("Europe/London");
   let addisAbabaElement = document.querySelector("#addis-ababa");
   let addisAbabaDateElement = addisAbabaElement.querySelector(".date");
   let addisAbabaTimeElement = addisAbabaElement.querySelector(".time");
@@ -34,10 +34,10 @@ function updateTime() {
     "h:mm:ss [<small>]A[</small>]"
   );
 
-  copenhagenDateElement.innerHTML = moment()
-    .tz("Europe/Copenhagen")
+  edinburghDateElement.innerHTML = moment()
+    .tz("Europe/London")
     .format(`MMMM Do, YYYY`);
-  copenhagenTimeElement.innerHTML = copenhagenTime.format(
+  edinburghTimeElement.innerHTML = edinburghTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
 
