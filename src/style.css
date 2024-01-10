@@ -73,11 +73,18 @@ a:hover {
 
 .time {
   font-size: 40px;
-
   font-family: "Courier New", monospace;
+}
+
+.fun-fact {
+  white-space: break-word;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .back-button {
   color: #143d52;
   text-decoration: none;
+  text-align: center;
+  display: block;
 }
