@@ -45,5 +45,38 @@ function updateTime() {
     .format(`MMMM Do, YYYY`);
   tokyoTimeElement.innerHTML = tokyoTime.format("HH:mm:ss");
 }
+
+function updateCities(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = getCityName(cityTimeZone);
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#all-cities");
+  citiesElement.innerHTML = `
+    <div class="city">
+      <div>
+        <h2>${cityName}</h2>
+        <div class="date">${cityTime.format("MMMM Do, YYYY")}</div>
+      </div>
+      <div class="time">${cityTime.format("HH:mm:ss")}</div>
+    </div>`;
+}
+
+const timeZoneDisplayNames = {
+  "America/Paramaribo": "Paramaribo, Suriname",
+  "Africa/Banjul": "Banjul, The Gambia",
+  "Europe/Oslo": "Svalbard, Norway",
+  "Asia/Colombo": "Colombo, Sri Lanka",
+  "Asia/Ulaanbaatar": "Ulaanbaatar, Mongolia",
+  "Pacific/Auckland": "Whangārei, New Zealand",
+  "current-location": "Current location",
+};
+
+function getCityName(timeZone) {
+  return timeZoneDisplayNames[timeZone] || timeZone.split("/").pop();
+}
 updateTime();
 setInterval(updateTime, 1000);
+
+let citiesSelectElement = document.querySelector("#cities");
+
+citiesSelectElement.addEventListener("change", updateCities);
