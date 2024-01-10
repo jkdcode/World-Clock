@@ -3,10 +3,6 @@ body {
   background: #143d52;
 }
 
-header {
-  border-bottom: 1px solid #143d52;
-}
-
 h1 {
   color: #143d52;
   text-align: center;
@@ -23,18 +19,13 @@ h2 {
   font-size: 28px;
 }
 
-label {
-  font-size: 20px;
-  color: #143d52;
-}
-
 select {
   margin-bottom: 20px;
   margin-top: 10px;
   padding: 5px 10px;
   border-radius: 5px;
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Inria Sans", sans-serif;
 }
 
@@ -51,7 +42,7 @@ footer {
   color: #fbfbfb;
 }
 
-a {
+footer a {
   color: #00d26a;
   text-decoration: none;
 }
@@ -84,4 +75,9 @@ a:hover {
   font-size: 40px;
 
   font-family: "Courier New", monospace;
+}
+
+.back-button {
+  color: #143d52;
+  text-decoration: none;
 }

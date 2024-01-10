@@ -61,7 +61,8 @@ function updateCities(event) {
         <div class="date">${cityTime.format("MMMM Do, YYYY")}</div>
       </div>
       <div class="time">${cityTime.format("HH:mm:ss")}</div>
-    </div>`;
+    </div>
+    <a href="https://julies-world-clock.netlify.app/" class="back-button">Go back</a>`;
 }
 
 updateTime();
