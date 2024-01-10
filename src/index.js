@@ -48,7 +48,10 @@ function updateTime() {
 
 function updateCities(event) {
   let cityTimeZone = event.target.value;
-  let cityName = getCityName(cityTimeZone);
+  if (cityTimeZone === "current-location") {
+    cityTimeZone = moment.tz.guess();
+  }
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#all-cities");
   citiesElement.innerHTML = `
@@ -61,19 +64,6 @@ function updateCities(event) {
     </div>`;
 }
 
-const timeZoneDisplayNames = {
-  "America/Paramaribo": "Paramaribo, Suriname",
-  "Africa/Banjul": "Banjul, The Gambia",
-  "Europe/Oslo": "Svalbard, Norway",
-  "Asia/Colombo": "Colombo, Sri Lanka",
-  "Asia/Ulaanbaatar": "Ulaanbaatar, Mongolia",
-  "Pacific/Auckland": "Whangārei, New Zealand",
-  "current-location": "Current location",
-};
-
-function getCityName(timeZone) {
-  return timeZoneDisplayNames[timeZone] || timeZone.split("/").pop();
-}
 updateTime();
 setInterval(updateTime, 1000);
 
