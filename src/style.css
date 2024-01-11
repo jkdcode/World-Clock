@@ -79,8 +79,10 @@ a:hover {
 .fun-fact {
   margin-top: 5px;
   margin-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 18px;
   color: #143d52;
+  border-bottom: 1px dashed #143d52;
 }
 
 .back-button {
