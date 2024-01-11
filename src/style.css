@@ -77,13 +77,15 @@ a:hover {
 }
 
 .fun-fact {
-  white-space: break-word;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 20px;
+  font-size: 18px;
+  color: #143d52;
 }
 
 .back-button {
   color: #143d52;
+  font-weight: bold;
   text-decoration: none;
   text-align: center;
   display: block;
