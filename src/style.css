@@ -31,7 +31,9 @@ select {
 
 small {
   font-size: 18px;
-  vertical-align: middle;
+  vertical-align: text-top;
+
+  font-family: "Inria Sans", sans-serif;
 }
 
 footer {
